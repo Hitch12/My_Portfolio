@@ -18,16 +18,16 @@
   // scroll-snap-align: start;
 }
 /* Extra small devices (phones, 600px and down) */
-// .sticky-container {
-//   scroll-snap-type: none;
-//   overflow-y: scroll;
-//   height: auto;
-
-// }
-// .sticky-section {
-//   scroll-snap-align: start;
-// }
 @media only screen and (max-width: 600px) {
+  .sticky-container {
+    // scroll-snap-type: none;
+    // overflow-y: scroll;
+    height: auto;
+
+  }
+  .sticky-section {
+    // scroll-snap-align: start;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
