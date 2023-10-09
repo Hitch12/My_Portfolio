@@ -10,6 +10,8 @@ import { ResumeComponent } from './resume/resume.component';
 import { DividerModule } from 'primeng/divider';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { SkillsComponent } from './skills/skills.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { SkillsComponent } from './skills/skills.component';
 
     DividerModule,
     ProgressBarModule,
+    BrowserAnimationsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
