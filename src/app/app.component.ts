@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'My_Portfolio';
+  isLoading:boolean = true;
+  ngOnInit(): void {
+    setTimeout(()=>{
+      this.isLoading = false;
+    },0)  // it was 4300
+
+  }
+
 }

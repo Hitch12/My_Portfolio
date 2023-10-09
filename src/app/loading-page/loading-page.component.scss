@@ -1,0 +1,18 @@
+:root{
+  --main-bgColor: #0F0823;
+  --main-textColor: #BF46E8;
+}
+.bgColor{
+  background: #0F0823;
+  transition: all 0.3s;
+
+}
+.textColor{
+  color: #BF46E8;
+}
+.loading{
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+

@@ -1,0 +1,80 @@
+.resume{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.container {
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+
+}
+
+
+.progress {
+  height: 8px !important;
+  overflow: hidden;
+}
+.skills-title{
+  letter-spacing: 1.5px;
+  font-size: 18px;
+  font-family: Cascadia Code;
+  background: #BF46E8;
+  padding: 5px 10px;
+}
+.about-info{
+  font-family: Cascadia Code;
+}
+.about-info table p{
+  margin-bottom: 10px;
+}
+
+.summery p{
+  font-size: 18px !important;
+  line-height: 150%;
+}
+.skills ,.summery h2{
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2.5px;
+}
+.summery h2{
+  font-weight: 600;
+  font-size: 24px;
+
+}
+
+.pipe2{
+  color: #BF46E8;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  table > tr > td > p {
+    font-size: 13px;
+  }
+  .summery h2{
+    margin-bottom: 15px !important;
+  }
+  .summery p{
+    font-size: 16px !important;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

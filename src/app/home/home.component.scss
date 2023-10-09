@@ -1,0 +1,238 @@
+
+:root{
+  --main-bgColor: #0F0823;
+  --main-textColor: #BF46E8;
+}
+.bgColor{
+  background: #0F0823;
+}
+.textColor{
+  color: #BF46E8;
+}
+.container > *{
+  margin: 0;
+  padding: 0;
+}
+.home{
+  height: 100vh;
+  width: 100%;
+  background: #0F0823;
+  overflow: hidden;
+}
+.mainInfo > *{
+  font-family: Cascadia Code;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  color: #BF46E8;
+}
+
+.mainInfo h1{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 54px;
+  color: white;
+  font-weight: 600;
+  text-shadow: 1px 2px #BF46E8;
+}
+.mainInfo .title, .pipe{
+  font-size: 28px;
+  text-shadow: 0.40px 0.80px white;
+}
+.mainInfo ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  .mainInfo ul li{
+    margin: 0;
+    padding: 0;
+  }
+}
+.mainInfo ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px ;
+  transition: all 0.2s;
+
+}
+.mainInfo ul li a:hover{
+  color: #BF46E8;
+  // text-shadow: 1.5px 3px #BF46E8;
+
+}
+
+
+.button {
+  --bouncing-offset: 0.30em;
+  --bg: 285, 70%, 91%;
+
+  background-color: hsl(var(--bg));
+  color: #BF46E8;
+
+  border: 0;
+  border-radius: 0.5em;
+  padding: 1em;
+
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+  line-height: 1;
+
+  cursor: pointer;
+  box-shadow: var(--bouncing-offset) var(--bouncing-offset) 0 0 #BF46E8;
+}
+
+.button:active,
+.button:focus-visible {
+  transform: translate(var(--bouncing-offset),var(--bouncing-offset));
+  box-shadow: none;
+}
+.mainLogo{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  // padding-right: 20px;
+
+  position: relative;
+  z-index: 1;
+}
+.icon{
+  background: rgba(80, 26, 98, 0.921);
+  box-shadow: 0 1px 1px 0 rgb(0 0 0 / 6%), 0 2px 5px 0 rgb(0 0 0 / 20%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+	animation: iconMove1 10s linear infinite both;
+  width: 100px;
+  height: 100px;
+  font-size: 54px;
+  position: absolute;
+  bottom: -20px;
+  left: 0px;
+}
+.icon2{
+  width: 65px;
+  height: 65px;
+  font-size: 34px;
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  color: #2EE89C;
+
+  animation: iconMove2 5s linear infinite both;
+}
+.icon3{
+  width: 80px;
+  height: 80px;
+  font-size: 38px;
+  position: absolute;
+  top: 0%;
+  right: 30%;
+  animation: iconMove1 8s linear infinite both;
+  z-index: -1;
+  color: #279C6C;
+}
+@keyframes iconMove1 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+  }
+  60% {
+    transform: translate(4px, 4px);
+  }
+  80% {
+    transform: translate(4px, -4px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
+}
+@keyframes iconMove2 {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(2.5px, -2.5px);
+  }
+  40% {
+    transform: translate(2.5px, 2.5px);
+  }
+  60% {
+    transform: translate(-2.5px, -2.5px);
+  }
+  80% {
+    transform: translate(-2.5px, 2.5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mainInfo h1{
+    font-size: 44px;
+  }
+  .title{
+    font-size: 24px !important;
+  }
+  .mainInfo .title, .pipe{
+    font-size: 24px;
+  }
+  .button{
+    font-size: 18px !important;
+  }
+  .mainCon{
+    display: flex;
+    align-items: center;
+    // background: #000;
+    height: 100vh;
+  }
+  .mainInfo{
+    min-width: 100%;
+    // background: #fff;
+    height: 55vh;
+
+  }
+  .mainLogo{
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // padding-top: 50px;
+    // background: #fff;
+    height: 20vh;
+  }
+  .icon1{
+    bottom: -20px;
+    left:  55%;
+    width: 80px;
+    height: 80px;
+    font-size: 44px;
+
+  }
+  .icon3{
+    top: 5%;
+    left: 15%;
+  }
+  .icon2{
+    top: -30%;
+    right: 20%;
+  }
+}
+
+
+/*
+https://codepen.io/Mahe76/pen/MWZGWpY
+*/
