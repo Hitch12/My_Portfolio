@@ -41,7 +41,7 @@
 .mainInfo ul {
   list-style: none;
   display: flex;
-  gap: 20px;
+  gap: 25px;
   justify-content: center;
   .mainInfo ul li{
     margin: 0;
@@ -51,7 +51,7 @@
 .mainInfo ul li a{
   text-decoration: none;
   color: #fff;
-  font-size: 30px ;
+  font-size: 34px ;
   transition: all 0.2s;
 
 }
@@ -79,7 +79,8 @@
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 5px;
   line-height: 1;
-
+  text-decoration: none;
+  text-align: center;
   cursor: pointer;
   box-shadow: var(--bouncing-offset) var(--bouncing-offset) 0 0 #BF46E8;
 }
